@@ -1,9 +1,7 @@
-import DataService from './common/dataService';
-import { Interfaces } from './identifiers';
+import { Interfaces } from '../identifiers';
 
-export default function getExperimentCondition(experimentPoint: string, partitionId?: string): Interfaces.IGetExperimentCondition {
+export default function getExperimentCondition(experimentConditionData: any, experimentPoint: string, partitionId?: string): Interfaces.IGetExperimentCondition {
   try {
-    const experimentConditionData = DataService.getData('experimentConditionData');
     if (experimentConditionData) {
       const result = experimentConditionData.filter(data =>
         partitionId ? (data.name === partitionId && data.point === experimentPoint) : (data.point === experimentPoint && !data.name)
