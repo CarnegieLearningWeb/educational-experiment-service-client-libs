@@ -31,8 +31,8 @@ import utils.Utils;
 public class ExperimentClient {
 
 	private List<ExperimentsResponse> allExperiments;
-	private String userId;
-	private String authToken;
+	private final String userId;
+	private final String authToken;
 
 	public ExperimentClient(String userId, String authToken, String baseUrl) {
 		this.userId = userId;
