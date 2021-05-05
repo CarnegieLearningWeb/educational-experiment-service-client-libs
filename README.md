@@ -1,3 +1,6 @@
+## This code has been moved to https://github.com/CarnegieLearningWeb/UpGrade.git
+Under the clientlibs/ directory
+
 # UPGRADE CLIENT SIDE SDK
 # Exported Class
 UpgradeClient named class is exported from this library
